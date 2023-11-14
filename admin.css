@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.aside-buttons{
+    margin-top: 520px;
+}
+
+
+/* ///////////////////////////////// */
+
+.close,
+.close ~ * {
+  --aside-width: 100px;
+}
+
+.close .nav-link span{
+  opacity: 0;
+}
+
+.close .logo-text {
+  display: none;
+}
+
+.close .close-logo img {
+  display: block;
+}
+
+.close .btn-1 span {
+  opacity: 0;
+}
+
+.close .btn-2  span{
+  opacity: 0;
+}
+ /* dark-light */
+
+ .dark :is(aside, header, main, footer) {
+    background-color: black;
+    color: white;
+  }
+  
+  .dark * {
+    color: white;
+  }
+
+  
+  .dark :is(aside, header, footer) {
+    border-color: rgba(155, 155, 218, 0.836);
+    color: black;
+  }
+
+  /* jadval-2 */
+
+  .sarlavha{
+    text-align: left;
+  }
+  /* table, th, td {
+    width: 800px;
+    border: 1px solid black; 
+    border-collapse: collapse;
+    font-size: 20px;
+  } */
